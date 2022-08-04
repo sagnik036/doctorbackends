@@ -18,6 +18,7 @@ class EventView(generics.ListCreateAPIView):
     queryset = Event.objects.all()
     serializer_class = EventSerializers
 
+
     @classmethod
     def post(cls, request):
         data = request.GET
